@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.btn_Exportar = new System.Windows.Forms.Button();
+            this.BTN_GERARREQ = new System.Windows.Forms.Button();
+            this.BTN_ABRIR = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox16 = new System.Windows.Forms.GroupBox();
             this.groupBox17 = new System.Windows.Forms.GroupBox();
@@ -119,9 +122,9 @@
             this.txt_compVTR = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.TXT_VTR = new System.Windows.Forms.TextBox();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.group_localpreservado = new System.Windows.Forms.GroupBox();
+            this.preservadoNAO = new System.Windows.Forms.RadioButton();
+            this.preservadoSIM = new System.Windows.Forms.RadioButton();
             this.label8 = new System.Windows.Forms.Label();
             this.txt_REF = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -143,9 +146,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.lb_Natureza = new System.Windows.Forms.Label();
             this.TXT_Natureza = new System.Windows.Forms.TextBox();
-            this.BTN_ABRIR = new System.Windows.Forms.Button();
-            this.BTN_GERARREQ = new System.Windows.Forms.Button();
-            this.btn_Exportar = new System.Windows.Forms.Button();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
@@ -173,7 +173,7 @@
             this.groupBox7.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox5.SuspendLayout();
-            this.groupBox4.SuspendLayout();
+            this.group_localpreservado.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -196,6 +196,36 @@
             this.splitContainer1.Size = new System.Drawing.Size(1008, 442);
             this.splitContainer1.SplitterDistance = 81;
             this.splitContainer1.TabIndex = 4;
+            // 
+            // btn_Exportar
+            // 
+            this.btn_Exportar.Location = new System.Drawing.Point(3, 356);
+            this.btn_Exportar.Name = "btn_Exportar";
+            this.btn_Exportar.Size = new System.Drawing.Size(75, 84);
+            this.btn_Exportar.TabIndex = 6;
+            this.btn_Exportar.Text = "Exportar Requisição formato IC/IML";
+            this.btn_Exportar.UseVisualStyleBackColor = true;
+            this.btn_Exportar.Click += new System.EventHandler(this.btn_Exportar_Click);
+            // 
+            // BTN_GERARREQ
+            // 
+            this.BTN_GERARREQ.Location = new System.Drawing.Point(3, 56);
+            this.BTN_GERARREQ.Name = "BTN_GERARREQ";
+            this.BTN_GERARREQ.Size = new System.Drawing.Size(75, 51);
+            this.BTN_GERARREQ.TabIndex = 5;
+            this.BTN_GERARREQ.Text = "Salvar requisição";
+            this.BTN_GERARREQ.UseVisualStyleBackColor = true;
+            this.BTN_GERARREQ.Click += new System.EventHandler(this.BTN_GERARREQ_Click);
+            // 
+            // BTN_ABRIR
+            // 
+            this.BTN_ABRIR.Location = new System.Drawing.Point(3, 8);
+            this.BTN_ABRIR.Name = "BTN_ABRIR";
+            this.BTN_ABRIR.Size = new System.Drawing.Size(75, 45);
+            this.BTN_ABRIR.TabIndex = 5;
+            this.BTN_ABRIR.Text = "Abrir Requisição";
+            this.BTN_ABRIR.UseVisualStyleBackColor = true;
+            this.BTN_ABRIR.Click += new System.EventHandler(this.BTN_ABRIR_Click);
             // 
             // groupBox1
             // 
@@ -1053,7 +1083,7 @@
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.groupBox5);
-            this.groupBox3.Controls.Add(this.groupBox4);
+            this.groupBox3.Controls.Add(this.group_localpreservado);
             this.groupBox3.Location = new System.Drawing.Point(20, 158);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(851, 75);
@@ -1123,38 +1153,38 @@
             this.TXT_VTR.Size = new System.Drawing.Size(121, 20);
             this.TXT_VTR.TabIndex = 14;
             // 
-            // groupBox4
+            // group_localpreservado
             // 
-            this.groupBox4.Controls.Add(this.radioButton2);
-            this.groupBox4.Controls.Add(this.radioButton1);
-            this.groupBox4.Location = new System.Drawing.Point(6, 19);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(110, 50);
-            this.groupBox4.TabIndex = 13;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Local Preservado?";
+            this.group_localpreservado.Controls.Add(this.preservadoNAO);
+            this.group_localpreservado.Controls.Add(this.preservadoSIM);
+            this.group_localpreservado.Location = new System.Drawing.Point(6, 19);
+            this.group_localpreservado.Name = "group_localpreservado";
+            this.group_localpreservado.Size = new System.Drawing.Size(110, 50);
+            this.group_localpreservado.TabIndex = 13;
+            this.group_localpreservado.TabStop = false;
+            this.group_localpreservado.Text = "Local Preservado?";
             // 
-            // radioButton2
+            // preservadoNAO
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(57, 19);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(45, 17);
-            this.radioButton2.TabIndex = 13;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Não";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.preservadoNAO.AutoSize = true;
+            this.preservadoNAO.Location = new System.Drawing.Point(57, 19);
+            this.preservadoNAO.Name = "preservadoNAO";
+            this.preservadoNAO.Size = new System.Drawing.Size(45, 17);
+            this.preservadoNAO.TabIndex = 13;
+            this.preservadoNAO.TabStop = true;
+            this.preservadoNAO.Text = "Não";
+            this.preservadoNAO.UseVisualStyleBackColor = true;
             // 
-            // radioButton1
+            // preservadoSIM
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(6, 19);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(42, 17);
-            this.radioButton1.TabIndex = 12;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Sim";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.preservadoSIM.AutoSize = true;
+            this.preservadoSIM.Location = new System.Drawing.Point(6, 19);
+            this.preservadoSIM.Name = "preservadoSIM";
+            this.preservadoSIM.Size = new System.Drawing.Size(42, 17);
+            this.preservadoSIM.TabIndex = 12;
+            this.preservadoSIM.TabStop = true;
+            this.preservadoSIM.Text = "Sim";
+            this.preservadoSIM.UseVisualStyleBackColor = true;
             // 
             // label8
             // 
@@ -1344,36 +1374,6 @@
             this.TXT_Natureza.Size = new System.Drawing.Size(795, 20);
             this.TXT_Natureza.TabIndex = 1;
             // 
-            // BTN_ABRIR
-            // 
-            this.BTN_ABRIR.Location = new System.Drawing.Point(3, 8);
-            this.BTN_ABRIR.Name = "BTN_ABRIR";
-            this.BTN_ABRIR.Size = new System.Drawing.Size(75, 45);
-            this.BTN_ABRIR.TabIndex = 5;
-            this.BTN_ABRIR.Text = "Abrir Requisição";
-            this.BTN_ABRIR.UseVisualStyleBackColor = true;
-            this.BTN_ABRIR.Click += new System.EventHandler(this.BTN_ABRIR_Click);
-            // 
-            // BTN_GERARREQ
-            // 
-            this.BTN_GERARREQ.Location = new System.Drawing.Point(3, 56);
-            this.BTN_GERARREQ.Name = "BTN_GERARREQ";
-            this.BTN_GERARREQ.Size = new System.Drawing.Size(75, 51);
-            this.BTN_GERARREQ.TabIndex = 5;
-            this.BTN_GERARREQ.Text = "Salvar requisição";
-            this.BTN_GERARREQ.UseVisualStyleBackColor = true;
-            this.BTN_GERARREQ.Click += new System.EventHandler(this.BTN_GERARREQ_Click);
-            // 
-            // btn_Exportar
-            // 
-            this.btn_Exportar.Location = new System.Drawing.Point(3, 356);
-            this.btn_Exportar.Name = "btn_Exportar";
-            this.btn_Exportar.Size = new System.Drawing.Size(75, 84);
-            this.btn_Exportar.TabIndex = 6;
-            this.btn_Exportar.Text = "Exportar Requisição formato IC/IML";
-            this.btn_Exportar.UseVisualStyleBackColor = true;
-            this.btn_Exportar.Click += new System.EventHandler(this.btn_Exportar_Click);
-            // 
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
@@ -1432,8 +1432,8 @@
             this.groupBox3.ResumeLayout(false);
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
+            this.group_localpreservado.ResumeLayout(false);
+            this.group_localpreservado.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
@@ -1533,9 +1533,9 @@
         private System.Windows.Forms.TextBox txt_compVTR;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox TXT_VTR;
-        private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.GroupBox group_localpreservado;
+        private System.Windows.Forms.RadioButton preservadoNAO;
+        private System.Windows.Forms.RadioButton preservadoSIM;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox txt_REF;
         private System.Windows.Forms.Label label7;

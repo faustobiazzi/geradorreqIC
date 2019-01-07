@@ -47,25 +47,33 @@ namespace gera_REQ
                 string v1 = TXT_Natureza.Text + ",";
                 string v2 = cmbOrigem.Text + ",";
                 string v3 = TXT_BOPM.Text+",";
-                string v4 = data_Acionamento.ToString() + ",";
-                string v5 = Hora_Cepol.ToString() + ",";
+                string v4 = data_Acionamento.Value.ToString() + ",";
+                string v5 = Hora_Cepol.Value.ToString() + ",";
                 if (check_DP.Checked)
                 { 
                     respostaDP = "X,";
                 }
                 if (checkCEPOL.Checked)
                     respostaCEPOL = "X,";
-                string v6 = hora_Resposta.ToString() + ",";
-                string V7 = datahoraPericia.ToString() + ",";
+                string v6 = hora_Resposta.Value.ToString() + ",";
+                string V7 = datahoraPericia.Value.ToString() + ",";
                 string v8 = TXT_localFato.Text + ",";
                 string v9 = txt_REF.Text + ",";
-                
+                string v10;
+                if (preservadoSIM.Checked) { 
+                    v10 = "preservado,";
+                }
+                else
+                {
+                    v10 = "não preservado,";
+                }
+
 
 
                 StringBuilder csvcontent = new StringBuilder();
                 csvcontent.AppendLine("natureza,origem,bopm,data de acionamento, hora cepol, resposta DP,Resposta Cepol, " +
-                    "hora da resposta, pericia no local,local do fato, referência");
-                csvcontent.AppendLine(v1 + v2 + v3 + v4 + v5+respostaDP+respostaCEPOL+v6+V7+v8+v9);
+                    "hora da resposta, pericia no local,local do fato, referência, status de preservação,");
+                csvcontent.AppendLine(v1 + v2 + v3 + v4 + v5+respostaDP+respostaCEPOL+v6+V7+v8+v9+v10);
                 //File.AppendAllText(filePath, csvcontent.ToString(), Encoding.GetEncoding(28591));
                 
                 if (File.Exists(filePath))

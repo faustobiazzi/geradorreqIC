@@ -8,3 +8,13 @@ C:\Users\TOXICOLOGIA\source\repos\gera_REQ\gera_REQ\obj\Debug\gera_REQ.csproj.Co
 C:\Users\TOXICOLOGIA\source\repos\gera_REQ\gera_REQ\obj\Debug\gera_REQ.exe
 C:\Users\TOXICOLOGIA\source\repos\gera_REQ\gera_REQ\obj\Debug\gera_REQ.pdb
 C:\Users\TOXICOLOGIA\source\repos\gera_REQ\gera_REQ\obj\Debug\gera_REQ.insert_Dados.resources
+C:\Users\TOXICOLOGIA\Source\Repos\faustobiazzi\geradorreqIC\gera_REQ\gera_REQ\bin\Debug\gera_REQ.exe.config
+C:\Users\TOXICOLOGIA\Source\Repos\faustobiazzi\geradorreqIC\gera_REQ\gera_REQ\bin\Debug\gera_REQ.exe
+C:\Users\TOXICOLOGIA\Source\Repos\faustobiazzi\geradorreqIC\gera_REQ\gera_REQ\bin\Debug\gera_REQ.pdb
+C:\Users\TOXICOLOGIA\Source\Repos\faustobiazzi\geradorreqIC\gera_REQ\gera_REQ\obj\Debug\gera_REQ.csprojAssemblyReference.cache
+C:\Users\TOXICOLOGIA\Source\Repos\faustobiazzi\geradorreqIC\gera_REQ\gera_REQ\obj\Debug\gera_REQ.insert_Dados.resources
+C:\Users\TOXICOLOGIA\Source\Repos\faustobiazzi\geradorreqIC\gera_REQ\gera_REQ\obj\Debug\gera_REQ.Properties.Resources.resources
+C:\Users\TOXICOLOGIA\Source\Repos\faustobiazzi\geradorreqIC\gera_REQ\gera_REQ\obj\Debug\gera_REQ.csproj.GenerateResource.cache
+C:\Users\TOXICOLOGIA\Source\Repos\faustobiazzi\geradorreqIC\gera_REQ\gera_REQ\obj\Debug\gera_REQ.csproj.CoreCompileInputs.cache
+C:\Users\TOXICOLOGIA\Source\Repos\faustobiazzi\geradorreqIC\gera_REQ\gera_REQ\obj\Debug\gera_REQ.exe
+C:\Users\TOXICOLOGIA\Source\Repos\faustobiazzi\geradorreqIC\gera_REQ\gera_REQ\obj\Debug\gera_REQ.pdb
